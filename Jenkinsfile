@@ -11,7 +11,7 @@ pipeline {
                         $class: 'GitSCM',
                         branches: [[name: '*/main']], // The pipeline will only consider the 'main' branch.
                         extensions: [[$class: 'CleanCheckout']], // Ensures a clean checkout without any leftovers from previous builds.
-                        userRemoteConfigs: [[url: 'https://' + env.github_token + '@' + 'github.com/ab12345/12345xyz.git']] // The repository URL with the GitHub token for authentication.
+                        userRemoteConfigs: [[url: 'https://' + env.github_token + '@' + 'https://github.com/gopuc365/startup-devops-project.git']] // The repository URL with the GitHub token for authentication.
                     ])
                 }
             }
